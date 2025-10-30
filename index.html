@@ -5,13 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
       name="description"
-      content="CoinCasino - Play & Win Instantly. Get 200 Free Spins on Your First Deposit!"
+      content="CoinCasino - Get 200 Free Spins when you stake £10!"
     />
     <title>CoinCasino - 200 Free Spins Welcome Bonus</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800;900&display=swap"
       rel="stylesheet"
     />
     <style>
@@ -22,512 +22,520 @@
       }
 
       body {
-        font-family: "Montserrat", sans-serif;
-        background: #000000;
-        color: #ffffff;
+        font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI",
+          Roboto, "Helvetica Neue", Arial, sans-serif;
+        background: #0d0e12;
+        color: #f1eff7;
         overflow-x: hidden;
       }
 
-      .container {
-        max-width: 1200px;
-        margin: 0 auto;
-        padding: 0 20px;
-      }
-
       header {
+        background: linear-gradient(180deg, #9f36f1 25%, #ae57f2 100%);
+        padding: 15px 0;
         position: fixed;
         top: 0;
         width: 100%;
-        background: rgba(0, 0, 0, 0.95);
-        backdrop-filter: blur(10px);
         z-index: 1000;
-        border-bottom: 1px solid rgba(255, 215, 0, 0.1);
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
       }
 
       .header-content {
+        max-width: 1400px;
+        margin: 0 auto;
+        padding: 0 40px;
         display: flex;
         justify-content: space-between;
         align-items: center;
-        padding: 15px 20px;
-        max-width: 1200px;
-        margin: 0 auto;
       }
 
-      .logo {
-        display: flex;
-        align-items: center;
-        gap: 10px;
-        font-size: 24px;
-        font-weight: 800;
-        color: #ffd700;
-        text-decoration: none;
+      .logo img {
+        height: 45px;
       }
 
-      .logo-icon {
-        width: 40px;
-        height: 40px;
-        background: linear-gradient(135deg, #ffd700, #ffa500);
-        border-radius: 50%;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        font-size: 20px;
-        box-shadow: 0 0 20px rgba(255, 215, 0, 0.3);
-      }
-
-      .header-buttons {
-        display: flex;
-        gap: 15px;
-      }
-
-      .btn {
-        padding: 10px 25px;
-        border-radius: 25px;
+      .login-btn {
+        background: rgba(255, 255, 255, 0.2);
+        color: #ffffff;
+        padding: 10px 30px;
+        border-radius: 6px;
         text-decoration: none;
         font-weight: 600;
+        font-size: 16px;
         transition: all 0.3s ease;
-        cursor: pointer;
-        border: none;
-        font-size: 14px;
+        border: 1px solid rgba(255, 255, 255, 0.3);
       }
 
-      .btn-secondary {
-        background: transparent;
-        color: #ffffff;
-        border: 2px solid #ffd700;
-      }
-
-      .btn-secondary:hover {
-        background: #ffd700;
-        color: #000000;
-      }
-
-      .btn-primary {
-        background: linear-gradient(135deg, #ffd700, #ffa500);
-        color: #000000;
-        font-weight: 700;
-        box-shadow: 0 4px 15px rgba(255, 215, 0, 0.4);
-      }
-
-      .btn-primary:hover {
-        transform: translateY(-2px);
-        box-shadow: 0 6px 20px rgba(255, 215, 0, 0.6);
+      .login-btn:hover {
+        background: rgba(255, 255, 255, 0.3);
       }
 
       .hero {
-        min-height: 100vh;
-        display: flex;
-        align-items: center;
-        justify-content: center;
+        background: linear-gradient(135deg, #191b22 0%, #3e3347 100%);
+        padding-top: 80px;
+        min-height: 500px;
         position: relative;
         overflow: hidden;
-        padding-top: 80px;
-      }
-
-      .hero-variant-a {
-        background: linear-gradient(
-          135deg,
-          #000000 0%,
-          #1a1a00 50%,
-          #000000 100%
-        );
-      }
-
-      .hero-variant-b {
-        background: linear-gradient(
-          135deg,
-          #000000 0%,
-          #0a0a0a 50%,
-          #1a1a1a 100%
-        );
-      }
-
-      .coin-animation {
-        position: absolute;
-        width: 100%;
-        height: 100%;
-        overflow: hidden;
-        opacity: 0.1;
-      }
-
-      .coin {
-        position: absolute;
-        width: 60px;
-        height: 60px;
-        background: linear-gradient(135deg, #ffd700, #ffa500);
-        border-radius: 50%;
-        animation: float 15s infinite ease-in-out;
-        box-shadow: 0 0 30px rgba(255, 215, 0, 0.5);
-      }
-
-      @keyframes float {
-        0%,
-        100% {
-          transform: translateY(0) rotate(0deg);
-        }
-        50% {
-          transform: translateY(-50px) rotate(180deg);
-        }
       }
 
       .hero-content {
-        position: relative;
-        z-index: 10;
-        text-align: center;
-        padding: 40px 20px;
+        max-width: 1400px;
+        margin: 0 auto;
+        padding: 60px 40px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 60px;
+        align-items: center;
       }
 
-      .hero-badge {
-        display: inline-block;
-        background: rgba(255, 215, 0, 0.1);
-        border: 2px solid #ffd700;
-        padding: 8px 20px;
-        border-radius: 25px;
-        font-size: 14px;
-        font-weight: 600;
-        color: #ffd700;
-        margin-bottom: 25px;
+      .hero-text h1 {
+        font-size: 72px;
+        font-weight: 900;
+        line-height: 1.1;
+        margin-bottom: 10px;
+        color: #bc7cee;
         text-transform: uppercase;
-        letter-spacing: 1px;
+        letter-spacing: -1px;
       }
 
-      h1 {
-        font-size: 56px;
-        font-weight: 800;
-        line-height: 1.2;
+      .hero-text h2 {
+        font-size: 52px;
+        font-weight: 900;
+        line-height: 1.1;
         margin-bottom: 20px;
-        background: linear-gradient(135deg, #ffd700, #ffa500, #ffd700);
-        background-size: 200% auto;
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-        background-clip: text;
-        animation: shine 3s linear infinite;
+        color: #f1eff7;
+        text-transform: uppercase;
       }
 
-      @keyframes shine {
-        to {
-          background-position: 200% center;
-        }
-      }
-
-      .hero-subtext {
+      .hero-text p {
         font-size: 20px;
-        color: #cccccc;
-        margin-bottom: 40px;
-        max-width: 600px;
-        margin-left: auto;
-        margin-right: auto;
-        line-height: 1.6;
+        color: #f1eff7;
+        margin-bottom: 30px;
+        font-weight: 500;
       }
 
-      .hero-cta {
+      .cta-btn {
         display: inline-block;
+        background: linear-gradient(180deg, #9f36f1 25%, #ae57f2 100%);
+        color: #ffffff;
         padding: 18px 50px;
-        font-size: 18px;
+        font-size: 24px;
         font-weight: 700;
-        background: linear-gradient(135deg, #ffd700, #ffa500);
-        color: #000000;
+        border-radius: 8px;
         text-decoration: none;
-        border-radius: 30px;
-        box-shadow: 0 8px 25px rgba(255, 215, 0, 0.4);
         transition: all 0.3s ease;
-        border: none;
-        cursor: pointer;
+        box-shadow: 0 4px 15px rgba(159, 54, 241, 0.4);
+        text-transform: capitalize;
       }
 
-      .hero-cta:hover {
-        transform: translateY(-3px);
-        box-shadow: 0 12px 35px rgba(255, 215, 0, 0.6);
+      .cta-btn:hover {
+        background: linear-gradient(180deg, #ae57f2 25%, #bc7cee 100%);
+        transform: translateY(-2px);
+        box-shadow: 0 6px 20px rgba(159, 54, 241, 0.6);
       }
 
-      .section {
-        padding: 80px 20px;
+      .disclaimer {
+        font-size: 12px;
+        color: rgba(255, 255, 255, 0.8);
+        margin-top: 20px;
+        line-height: 1.5;
+        max-width: 500px;
+      }
+
+      .disclaimer a {
+        color: #ffffff;
+        text-decoration: underline;
+      }
+
+      .hero-image {
         position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
       }
 
-      .section-dark {
-        background: #141414;
+      .hero-image img {
+        max-width: 100%;
+        height: auto;
+        filter: drop-shadow(0 10px 30px rgba(0, 0, 0, 0.3));
       }
 
-      .section-title {
+      .how-to-section {
+        background: linear-gradient(180deg, #9f36f1 25%, #ae57f2 100%);
+        padding: 60px 0;
+      }
+
+      .how-to-container {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 40px;
+      }
+
+      .how-to-card {
+        background: #ffffff;
+        border-radius: 15px;
+        padding: 50px;
+        box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
+      }
+
+      .how-to-header {
+        background: linear-gradient(180deg, #9f36f1 25%, #ae57f2 100%);
+        color: #ffffff;
+        padding: 20px;
         text-align: center;
-        font-size: 42px;
-        font-weight: 800;
-        margin-bottom: 20px;
-        color: #ffd700;
+        border-radius: 10px 10px 0 0;
+        margin: -50px -50px 40px -50px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
       }
 
-      .section-subtitle {
-        text-align: center;
-        font-size: 18px;
-        color: #cccccc;
-        margin-bottom: 60px;
-        max-width: 700px;
-        margin-left: auto;
-        margin-right: auto;
+      .how-to-header h2 {
+        font-size: 32px;
+        font-weight: 700;
+        text-transform: uppercase;
+        letter-spacing: 0.5px;
       }
 
       .steps-grid {
         display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-        gap: 40px;
-        margin-top: 60px;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 60px;
+        margin-top: 40px;
       }
 
-      .step-card {
-        background: rgba(255, 215, 0, 0.05);
-        border: 2px solid rgba(255, 215, 0, 0.2);
-        border-radius: 15px;
-        padding: 40px 30px;
+      .step {
         text-align: center;
-        transition: all 0.3s ease;
-        position: relative;
-      }
-
-      .step-card:hover {
-        transform: translateY(-10px);
-        border-color: #ffd700;
-        box-shadow: 0 10px 30px rgba(255, 215, 0, 0.2);
       }
 
       .step-number {
-        width: 60px;
-        height: 60px;
-        background: linear-gradient(135deg, #ffd700, #ffa500);
+        width: 80px;
+        height: 80px;
+        background: linear-gradient(180deg, #9f36f1, #bc7cee);
         border-radius: 50%;
         display: flex;
         align-items: center;
         justify-content: center;
-        font-size: 28px;
-        font-weight: 800;
-        color: #000000;
         margin: 0 auto 25px;
-        box-shadow: 0 5px 15px rgba(255, 215, 0, 0.3);
+        box-shadow: 0 5px 20px rgba(159, 54, 241, 0.3);
       }
 
-      .step-title {
-        font-size: 22px;
-        font-weight: 700;
-        margin-bottom: 15px;
+      .step-number span {
+        font-size: 40px;
+        font-weight: 900;
         color: #ffffff;
       }
 
-      .step-description {
+      .step h3 {
+        font-size: 20px;
+        font-weight: 700;
+        color: #000000;
+        margin-bottom: 10px;
+        text-transform: uppercase;
+      }
+
+      .step p {
         font-size: 16px;
-        color: #cccccc;
+        color: #333333;
         line-height: 1.6;
       }
 
-      .bonus-grid {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-        gap: 30px;
-        margin-top: 60px;
-      }
-
-      .bonus-card {
-        background: linear-gradient(
-          135deg,
-          rgba(255, 215, 0, 0.1),
-          rgba(255, 165, 0, 0.05)
-        );
-        border: 2px solid #ffd700;
-        border-radius: 20px;
-        padding: 40px;
+      .cta-section {
+        background: linear-gradient(180deg, #9f36f1 25%, #ae57f2 100%);
+        padding: 60px 0;
         text-align: center;
       }
 
-      .bonus-icon {
-        font-size: 48px;
-        margin-bottom: 20px;
+      .cta-section .cta-btn {
+        font-size: 28px;
+        padding: 20px 60px;
       }
 
-      .bonus-title {
-        font-size: 36px;
-        font-weight: 800;
-        color: #ffd700;
+      .terms-section {
+        background: #0d0e12;
+        padding: 60px 40px;
+      }
+
+      .terms-container {
+        max-width: 1200px;
+        margin: 0 auto;
+      }
+
+      .terms-section h2 {
+        font-size: 32px;
+        font-weight: 700;
+        color: #bc7cee;
+        margin-bottom: 30px;
+      }
+
+      .terms-section h3 {
+        font-size: 20px;
+        font-weight: 700;
+        color: #bc7cee;
+        margin-top: 30px;
         margin-bottom: 15px;
       }
 
-      .bonus-description {
-        font-size: 16px;
-        color: #cccccc;
-        line-height: 1.6;
-      }
-
-      .testimonials-grid {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-        gap: 30px;
-        margin-top: 60px;
-      }
-
-      .testimonial-card {
-        background: rgba(255, 215, 0, 0.05);
-        border: 1px solid rgba(255, 215, 0, 0.2);
-        border-radius: 15px;
-        padding: 30px;
-      }
-
-      .testimonial-header {
-        display: flex;
-        align-items: center;
-        gap: 15px;
+      .terms-section ul {
+        margin-left: 20px;
         margin-bottom: 20px;
       }
 
-      .testimonial-avatar {
-        width: 50px;
-        height: 50px;
-        background: linear-gradient(135deg, #ffd700, #ffa500);
-        border-radius: 50%;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        font-size: 24px;
-        font-weight: 700;
-        color: #000000;
+      .terms-section li {
+        color: #c3bdcc;
+        line-height: 1.8;
+        margin-bottom: 10px;
       }
 
-      .testimonial-name {
-        font-weight: 700;
-        color: #ffd700;
-      }
-
-      .testimonial-win {
-        font-size: 14px;
-        color: #cccccc;
-      }
-
-      .testimonial-text {
-        font-size: 15px;
-        color: #cccccc;
-        line-height: 1.6;
-        font-style: italic;
-      }
-
-      .stars {
-        color: #ffd700;
-        margin-bottom: 15px;
-        font-size: 18px;
+      .terms-section a {
+        color: #bc7cee;
+        text-decoration: underline;
       }
 
       footer {
-        background: #000000;
-        border-top: 1px solid rgba(255, 215, 0, 0.1);
-        padding: 40px 20px;
+        background: linear-gradient(180deg, #9f36f1 25%, #ae57f2 100%);
+        padding: 50px 40px;
+        color: #ffffff;
       }
 
       .footer-content {
         max-width: 1200px;
         margin: 0 auto;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        gap: 25px;
+        text-align: center;
       }
 
-      .social-icons {
+      .footer-logos {
         display: flex;
-        gap: 20px;
-      }
-
-      .social-icon {
-        width: 40px;
-        height: 40px;
-        background: rgba(255, 215, 0, 0.1);
-        border: 1px solid rgba(255, 215, 0, 0.3);
-        border-radius: 50%;
-        display: flex;
-        align-items: center;
         justify-content: center;
-        text-decoration: none;
-        color: #ffd700;
-        transition: all 0.3s ease;
-        font-size: 18px;
-      }
-
-      .social-icon:hover {
-        background: #ffd700;
-        color: #000000;
-        transform: translateY(-3px);
-      }
-
-      .footer-links {
-        display: flex;
-        gap: 30px;
         flex-wrap: wrap;
-        justify-content: center;
+        gap: 40px;
+        margin-bottom: 40px;
+        align-items: center;
       }
 
-      .footer-link {
-        color: #cccccc;
-        text-decoration: none;
-        font-size: 14px;
-        transition: color 0.3s ease;
+      .footer-logo {
+        height: 50px;
+        opacity: 0.9;
+        transition: opacity 0.3s ease;
       }
 
-      .footer-link:hover {
-        color: #ffd700;
+      .footer-logo:hover {
+        opacity: 1;
       }
 
       .footer-text {
-        text-align: center;
-        font-size: 13px;
-        color: #666666;
-        max-width: 800px;
+        font-size: 12px;
+        line-height: 1.8;
+        opacity: 0.9;
+        max-width: 900px;
+        margin: 0 auto;
+      }
+
+      .footer-text a {
+        color: #ffffff;
+        text-decoration: underline;
+      }
+
+      @media (max-width: 1024px) {
+        .hero-content {
+          grid-template-columns: 1fr;
+          text-align: center;
+          gap: 40px;
+        }
+
+        .hero-text h1 {
+          font-size: 56px;
+        }
+
+        .hero-text h2 {
+          font-size: 40px;
+        }
+
+        .steps-grid {
+          grid-template-columns: 1fr;
+          gap: 40px;
+        }
+
+        .hero-image img {
+          max-width: 400px !important;
+        }
       }
 
       @media (max-width: 768px) {
-        h1 {
+        .header-content {
+          padding-left: 20px;
+          padding-right: 20px;
+        }
+
+        .logo img {
+          height: 35px;
+        }
+
+        .login-btn {
+          padding: 8px 20px;
+          font-size: 14px;
+        }
+
+        .hero {
+          padding-top: 70px;
+        }
+
+        .hero-content {
+          padding: 40px 20px;
+        }
+
+        .hero-text h1 {
+          font-size: 48px;
+        }
+
+        .hero-text h2 {
           font-size: 36px;
         }
 
-        .hero-subtext {
-          font-size: 16px;
+        .hero-text p {
+          font-size: 18px;
         }
 
-        .section-title {
-          font-size: 32px;
+        .disclaimer {
+          font-size: 11px;
         }
 
-        .header-buttons {
-          gap: 10px;
+        .cta-btn {
+          font-size: 20px;
+          padding: 15px 40px;
+          width: 100%;
+          max-width: 300px;
         }
 
-        .btn {
-          padding: 8px 18px;
-          font-size: 13px;
+        .hero-image img {
+          max-width: 100% !important;
+          border-radius: 15px !important;
         }
 
-        .steps-grid,
-        .bonus-grid,
-        .testimonials-grid {
-          grid-template-columns: 1fr;
-          gap: 25px;
+        .how-to-container {
+          padding: 0 20px;
         }
 
-        .section {
-          padding: 50px 20px;
+        .how-to-card {
+          padding: 30px 20px;
+        }
+
+        .how-to-header {
+          margin: -30px -20px 30px -20px;
+          padding: 15px;
+          flex-direction: column;
+        }
+
+        .how-to-header h2 {
+          font-size: 20px;
+        }
+
+        .steps-grid {
+          gap: 30px;
+        }
+
+        .step-number {
+          width: 70px;
+          height: 70px;
+        }
+
+        .step-number span {
+          font-size: 36px;
+        }
+
+        .step h3 {
+          font-size: 18px;
+        }
+
+        .step p {
+          font-size: 14px;
+        }
+
+        .cta-section .cta-btn {
+          font-size: 22px;
+          padding: 18px 50px;
+          width: 100%;
+          max-width: 300px;
+        }
+
+        .terms-container {
+          padding: 0 20px;
+        }
+
+        .terms-section {
+          padding: 40px 20px;
+        }
+
+        .terms-section h2 {
+          font-size: 26px;
+        }
+
+        .terms-section h3 {
+          font-size: 18px;
+        }
+
+        .terms-section li {
+          font-size: 14px;
+        }
+
+        .footer-content {
+          padding: 0 20px;
+        }
+
+        .footer-logos {
+          gap: 20px;
+          font-size: 12px;
+        }
+
+        .footer-logos span {
+          font-size: 12px !important;
+        }
+
+        .footer-text {
+          font-size: 11px;
         }
       }
 
       @media (max-width: 480px) {
-        h1 {
+        .hero-text h1 {
+          font-size: 36px;
+        }
+
+        .hero-text h2 {
           font-size: 28px;
         }
 
-        .logo {
+        .hero-text p {
+          font-size: 16px;
+        }
+
+        .cta-btn {
+          font-size: 18px;
+          padding: 12px 30px;
+        }
+
+        .how-to-header h2 {
+          font-size: 18px;
+        }
+
+        .step-number {
+          width: 60px;
+          height: 60px;
+        }
+
+        .step-number span {
+          font-size: 30px;
+        }
+
+        .cta-section .cta-btn {
           font-size: 20px;
+          padding: 15px 40px;
         }
 
-        .logo-icon {
-          width: 35px;
-          height: 35px;
+        .terms-section h2 {
+          font-size: 22px;
         }
 
-        .hero-cta {
-          padding: 15px 35px;
+        .terms-section h3 {
           font-size: 16px;
         }
       }
@@ -536,248 +544,322 @@
   <body>
     <header>
       <div class="header-content">
-        <a href="#" class="logo">
-          <div class="logo-icon">₿</div>
-          <span>CoinCasino</span>
-        </a>
-        <div class="header-buttons">
-          <a
-            href="https://coincasino.com/login?clickid={clickid}"
-            class="btn btn-secondary"
-            id="header-login-btn"
-            >Login</a
-          >
-          <a
-            href="https://coincasino.com/signup?clickid={clickid}"
-            class="btn btn-primary"
-            id="header-signup-btn"
-            >Sign Up</a
-          >
+        <div class="logo">
+          <img
+            src="https://www.coincasino.com/wp-content/uploads/2025/07/logo1.svg"
+            alt="CoinCasino"
+          />
         </div>
+        <a
+          href="https://coincasino.com/login?clickid={clickid}"
+          class="login-btn"
+          id="header-login-btn"
+          >Log In</a
+        >
       </div>
     </header>
 
     <section class="hero" id="hero-section">
-      <div class="coin-animation">
-        <div
-          class="coin"
-          style="left: 10%; top: 20%; animation-delay: 0s"
-        ></div>
-        <div
-          class="coin"
-          style="left: 80%; top: 30%; animation-delay: 2s"
-        ></div>
-        <div
-          class="coin"
-          style="left: 50%; top: 10%; animation-delay: 4s"
-        ></div>
-        <div
-          class="coin"
-          style="left: 20%; top: 70%; animation-delay: 1s"
-        ></div>
-        <div
-          class="coin"
-          style="left: 70%; top: 60%; animation-delay: 3s"
-        ></div>
-      </div>
-
-      <div class="hero-content container">
-        <div class="hero-badge">🎰 Welcome Bonus Inside</div>
-        <h1>Play & Win Instantly<br />200 Free Spins on Your First Deposit!</h1>
-        <p class="hero-subtext">
-          Sign up now and claim your welcome bonus. No hidden terms — fast
-          payouts.
-        </p>
-        <a
-          href="https://coincasino.com/signup?clickid={clickid}&offer_id={offer_id}&subid={subid}"
-          class="hero-cta"
-          id="hero-cta-btn"
-          >Start Playing</a
-        >
+      <div class="hero-content">
+        <div class="hero-text">
+          <h1>GET 200</h1>
+          <h2>FREE SPINS</h2>
+          <p>When you stake £10</p>
+          <a
+            href="https://coincasino.com/signup?clickid={clickid}&offer_id={offer_id}&subid={subid}"
+            class="cta-btn"
+            id="hero-cta-btn"
+            >Claim Here</a
+          >
+          <p class="disclaimer">
+            New customers only. 1x deposit with Debit Card. Opt in and stake
+            £10+ on Casino slots within 30 days of reg. Max 200 Free Spins.
+            Optimal expiry 48 hours. T&Cs apply. Game restrictions apply.
+            <a href="#terms">Full T&Cs apply</a>.
+          </p>
+        </div>
+        <div class="hero-image">
+          <img
+            src="https://images.pexels.com/photos/7594223/pexels-photo-7594223.jpeg?auto=compress&cs=tinysrgb&w=600"
+            alt="Casino Games"
+            style="border-radius: 20px; max-width: 500px"
+          />
+        </div>
       </div>
     </section>
 
-    <section class="section section-dark">
-      <div class="container">
-        <h2 class="section-title">How It Works</h2>
-        <p class="section-subtitle">
-          Get started in three simple steps and start winning today
-        </p>
-
-        <div class="steps-grid">
-          <div class="step-card">
-            <div class="step-number">1</div>
-            <h3 class="step-title">Sign Up</h3>
-            <p class="step-description">
-              Create your free account in less than 60 seconds. No credit card
-              required to register.
-            </p>
+    <section class="how-to-section">
+      <div class="how-to-container">
+        <div class="how-to-card">
+          <div class="how-to-header">
+            <svg
+              width="28"
+              height="28"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect>
+              <line x1="12" y1="8" x2="12" y2="16"></line>
+              <line x1="8" y1="12" x2="16" y2="12"></line>
+            </svg>
+            <h2>HOW TO REDEEM</h2>
           </div>
-
-          <div class="step-card">
-            <div class="step-number">2</div>
-            <h3 class="step-title">Deposit</h3>
-            <p class="step-description">
-              Make your first deposit using crypto or card. Instant processing,
-              secure transactions.
-            </p>
-          </div>
-
-          <div class="step-card">
-            <div class="step-number">3</div>
-            <h3 class="step-title">Spin & Win</h3>
-            <p class="step-description">
-              Claim your 200 free spins and start playing. Winnings are credited
-              instantly to your account.
-            </p>
+          <div class="steps-grid">
+            <div class="step">
+              <div class="step-number">
+                <span>1</span>
+              </div>
+              <h3>OPT IN</h3>
+              <p>And launch any Casino slot</p>
+            </div>
+            <div class="step">
+              <div class="step-number">
+                <span>2</span>
+              </div>
+              <h3>STAKE £10</h3>
+              <p>And choose your Welcome Bonus</p>
+            </div>
+            <div class="step">
+              <div class="step-number">
+                <span>3</span>
+              </div>
+              <h3>YOUR FREE SPINS</h3>
+              <p>Will be credited within 48 hours</p>
+            </div>
           </div>
         </div>
       </div>
     </section>
 
-    <section class="section">
-      <div class="container">
-        <h2 class="section-title">Bonus Details</h2>
-        <p class="section-subtitle">
-          Everything you need to know about your welcome package
-        </p>
-
-        <div class="bonus-grid">
-          <div class="bonus-card">
-            <div class="bonus-icon">🎰</div>
-            <h3 class="bonus-title">200 Free Spins</h3>
-            <p class="bonus-description">
-              Get 200 free spins on popular slots. Use them on your favorite
-              games with real winning potential.
-            </p>
-          </div>
-
-          <div class="bonus-card">
-            <div class="bonus-icon">💰</div>
-            <h3 class="bonus-title">100% Match Bonus</h3>
-            <p class="bonus-description">
-              Double your first deposit up to $500. More funds means more
-              chances to hit that big win.
-            </p>
-          </div>
-
-          <div class="bonus-card">
-            <div class="bonus-icon">⚡</div>
-            <h3 class="bonus-title">Instant Payouts</h3>
-            <p class="bonus-description">
-              Withdraw your winnings instantly. No waiting, no hassle. Your
-              money, your way.
-            </p>
-          </div>
-        </div>
-      </div>
+    <section class="cta-section">
+      <a
+        href="https://coincasino.com/signup?clickid={clickid}&offer_id={offer_id}&subid={subid}"
+        class="cta-btn"
+        id="footer-cta-btn"
+        >Claim Here</a
+      >
     </section>
 
-    <section class="section section-dark">
-      <div class="container">
-        <h2 class="section-title">Recent Winners</h2>
-        <p class="section-subtitle">
-          Join thousands of players winning every day
-        </p>
+    <section class="terms-section" id="terms">
+      <div class="terms-container">
+        <h2>Terms & Conditions</h2>
 
-        <div class="testimonials-grid">
-          <div class="testimonial-card">
-            <div class="testimonial-header">
-              <div class="testimonial-avatar">M</div>
-              <div>
-                <div class="testimonial-name">Marcus T.</div>
-                <div class="testimonial-win">Won $2,450</div>
-              </div>
-            </div>
-            <div class="stars">★★★★★</div>
-            <p class="testimonial-text">
-              "I was skeptical at first, but after using my free spins, I hit a
-              massive win! Withdrawal was in my account within hours."
-            </p>
-          </div>
+        <h3>Who is eligible for this Offer?</h3>
+        <ul>
+          <li>
+            Available only to UK customers who have registered their CoinCasino
+            account within the previous 30 days and deposited using a Debit
+            Card. Customers must be successfully verified by us before any Free
+            Spins are awarded. Please see our Verification Policy for more
+            details.
+          </li>
+        </ul>
 
-          <div class="testimonial-card">
-            <div class="testimonial-header">
-              <div class="testimonial-avatar">S</div>
-              <div>
-                <div class="testimonial-name">Sarah K.</div>
-                <div class="testimonial-win">Won $1,890</div>
-              </div>
-            </div>
-            <div class="stars">★★★★★</div>
-            <p class="testimonial-text">
-              "Best casino experience I've had online. The bonus was
-              straightforward, and I actually won on my first day!"
-            </p>
-          </div>
+        <h3>How do you qualify?</h3>
+        <ul>
+          <li>
+            Opt in via the promotion page before any stakes will qualify for
+            this offer.
+          </li>
+          <li>
+            Stake £10 on eligible Casino Slots within 30 days of registration to
+            qualify.
+          </li>
+        </ul>
 
-          <div class="testimonial-card">
-            <div class="testimonial-header">
-              <div class="testimonial-avatar">J</div>
-              <div>
-                <div class="testimonial-name">James R.</div>
-                <div class="testimonial-win">Won $3,200</div>
-              </div>
-            </div>
-            <div class="stars">★★★★★</div>
-            <p class="testimonial-text">
-              "Fast payouts, great games, and the welcome bonus is real. Already
-              recommended to all my friends!"
-            </p>
-          </div>
-        </div>
-      </div>
-    </section>
+        <h3>What will not qualify?</h3>
+        <ul>
+          <li>
+            Customers depositing using prepaid Visa's and Mastercards, or
+            e-Wallets will not qualify for this promotion.
+          </li>
+          <li>
+            Stakes on Card Games, Live Casino, Scratchcards, Table Games or
+            Video Poker will not count toward this promotion.
+          </li>
+          <li>
+            Play with bonus funds or Free Spins will not count towards the
+            staking requirement for this offer.
+          </li>
+        </ul>
 
-    <section class="section" style="text-align: center; padding: 100px 20px">
-      <div class="container">
-        <h2 class="section-title">Ready to Win?</h2>
-        <p class="section-subtitle">
-          Join thousands of players and claim your 200 free spins today
-        </p>
-        <a
-          href="https://coincasino.com/signup?clickid={clickid}&offer_id={offer_id}&subid={subid}"
-          class="hero-cta"
-          id="footer-cta-btn"
-          >Start Playing Now</a
-        >
+        <h3>What will you receive?</h3>
+        <ul>
+          <li>
+            Once the staking is completed, you will be offered a choice of:
+            <ul>
+              <li>50 Free Spins on Age Of The Gods™ at £0.20 per spin</li>
+              <li>100 Free Spins on Better Wilds at £0.10 per spin</li>
+              <li>
+                200 Free Spins on Age Of The Gods™ God of Storms 2 at £0.05 per
+                spin
+              </li>
+            </ul>
+          </li>
+        </ul>
+
+        <h3>When will you be credited?</h3>
+        <ul>
+          <li>
+            Upon making your choice, your chosen Free Spins bonus will be
+            credited within 48 hours.
+          </li>
+        </ul>
+
+        <h3>Are there any other limitations you should know about?</h3>
+        <ul>
+          <li>
+            Bonus payments may be delayed should further account validation, by
+            email and/or SMS, be required.
+          </li>
+          <li>
+            You must make the choice at the time the bonus message is displayed
+            and can choose only one bonus.
+          </li>
+          <li>
+            Once accepted, the Free Spins will be available for 7 days and after
+            7 days they will expire.
+          </li>
+          <li>
+            The Free Spins will have no cash value and will not appear in your
+            cash or chip balance.
+          </li>
+          <li>
+            Winnings from the Free Spins will be added to your cash balance once
+            all Free Spins have been used. There are no wagering requirements
+            attached to any winnings received from the Free Spins.
+          </li>
+          <li>This offer is limited to one per player.</li>
+          <li>
+            This welcome offer is limited to one per person/address/IP
+            address/device or mobile number.
+          </li>
+          <li>
+            If you have previously registered a CoinCasino account and received
+            a Casino Welcome Offer, you will not be eligible for this offer.
+          </li>
+          <li>
+            In the event of a dispute, the decision of the CoinCasino Management
+            Team will be final and based on our Terms and Conditions.
+          </li>
+        </ul>
+
+        <h3>Can we change or remove this Welcome Offer?</h3>
+        <ul>
+          <li>
+            We may remove and change this offer without notice. These changes
+            will not affect any offer that you may have already Opted in to, or
+            placed any qualifying bets towards, other than where this is
+            necessary to prevent fraud or other similar unlawful behaviour.
+          </li>
+          <li>
+            CoinCasino reserve the right to withdraw the promotion, if required,
+            for reasons beyond our control, such as system failures or supplier
+            withdrawal (not exhaustive). In the instance that this happens, we
+            will endeavour to communicate any withdrawal in a timely manner.
+          </li>
+        </ul>
+
+        <h3>General terms</h3>
+        <ul>
+          <li>
+            One welcome offer per address/IP address/device or mobile number.
+            Previous account holders are not eligible for the offer. Anyone
+            opening a CoinCasino.com account that has previously held an account
+            with us that is closed does not qualify for the offer.
+          </li>
+          <li>Only one welcome offer per new customer.</li>
+          <li>
+            Customers depositing using prepaid Visa's and Mastercards, or
+            e-Wallets will not qualify for this promotion.
+          </li>
+          <li>
+            Customers may be required to confirm their participation by
+            responding to an automated SMS validation process via a SMS message.
+            Validation must be completed within 7 days of the first bet being
+            settled. The bonuses will be credited within 24 hours of SMS
+            validation taking place.
+          </li>
+          <li>
+            CoinCasino.com reserves the right to withhold the rewarding of any
+            Free Bet payment if a customer's identity cannot be verified using
+            our standard checks or if we have reasonable grounds to believe that
+            the account holder is not the person who has created the account or
+            is operating the account. In these cases, CoinCasino may request a
+            valid government issued photo identity (passport/full driving
+            licence) and proof of address (bank statement/utility bill) dated
+            within the last 3 months, along with a photo of yourself holding a
+            passport or full driving licence so that you can be clearly
+            identified alongside your photo ID (a selfie). Failure to satisfy
+            verification of your identity will result in the non-payment of your
+            bonus.
+          </li>
+          <li>
+            CoinCasino reserve the right to withdraw the promotion, if required,
+            for reasons beyond our control, such as system failures or supplier
+            withdrawal (not exhaustive). In the instance that this happens, we
+            will endeavour to communicate any withdrawal in a timely manner.
+          </li>
+          <li>
+            These terms and Conditions are additional to and operate in
+            conjunction with the general CoinCasino Terms and Conditions.
+          </li>
+          <li>
+            Gamble responsibly. For more info visit
+            <a href="https://www.gambleaware.org">www.gambleaware.org</a> or
+            telephone Freephone Helpline: 0808 8020 133.
+          </li>
+        </ul>
+
+        <h3>Cookies Policy</h3>
+        <ul>
+          <li>
+            We place cookies on your device in order to operate this site,
+            enhance your user experience and improve our services. Some cookies
+            are necessary for the site to work, while others help us manage and
+            improve the site and the services we offer you. You can manage your
+            cookie settings.
+          </li>
+        </ul>
       </div>
     </section>
 
     <footer>
       <div class="footer-content">
-        <div class="social-icons">
-          <a href="#" class="social-icon">𝕏</a>
-          <a href="#" class="social-icon">f</a>
-          <a href="#" class="social-icon">in</a>
-          <a href="#" class="social-icon">▶</a>
-        </div>
-
-        <div class="footer-links">
-          <a href="https://coincasino.com/terms" class="footer-link"
-            >Terms & Conditions</a
+        <div class="footer-logos">
+          <span style="font-size: 14px; font-weight: 600"
+            >🔒 TAKE TIME TO THINK</span
           >
-          <a href="https://coincasino.com/privacy" class="footer-link"
-            >Privacy Policy</a
+          <span style="font-size: 14px; font-weight: 600">GambleAware</span>
+          <span style="font-size: 14px; font-weight: 600">18+</span>
+          <span style="font-size: 14px; font-weight: 600"
+            >GAMBLING COMMISSION</span
           >
-          <a
-            href="https://coincasino.com/responsible-gaming"
-            class="footer-link"
-            >Responsible Gaming</a
-          >
-          <a href="https://coincasino.com/support" class="footer-link"
-            >Support</a
-          >
+          <span style="font-size: 14px; font-weight: 600">NCPG</span>
+          <span style="font-size: 14px; font-weight: 600">🎰 GAMSTOP</span>
         </div>
 
         <p class="footer-text">
-          18+ only. Please gamble responsibly. BeGambleAware.org | Terms apply.
-          New customers only. Min deposit required. Free spins valid for 7 days.
-          Wagering requirements apply.
-        </p>
-
-        <p class="footer-text" style="margin-top: 15px">
-          © 2025 CoinCasino. All rights reserved.
+          CoinCasino Limited trades as CoinCasino and is registered in Gibraltar
+          with company registration number 99514. Its registered office is at
+          5.2 Waterport Place, 2 Europort Avenue, Gibraltar GX11 1AA, Gibraltar.
+          CoinCasino Limited is licensed and regulated in Great Britain by the
+          Gambling Commission under account number 39483 and is further licensed
+          by the Government of Gibraltar and regulated by the Gibraltar Gaming
+          No. 049 & Betting RGL no. 051.
+          <br /><br />
+          We are committed to supporting Safer Gambling. Please gamble
+          responsibly and in moderation.
+          <br />
+          Underage gambling is an offence. You must be 18 or over. For further
+          information on how we protect our players please visit our Safer
+          Gambling pages.
+          <br />
+          © 2025 CoinCasino Limited. All Rights Reserved.
         </p>
       </div>
     </footer>
@@ -790,10 +872,8 @@
       // Configuration
       const AB_TEST_CONFIG = {
         enabled: true,
-        testName: "hero_variant_test",
+        testName: "hero_layout_test",
         variants: ["A", "B"],
-        // Variant A = Gold hero section
-        // Variant B = Dark gradient hero section
       };
 
       // Get URL parameters for Keitaro tracking
@@ -818,40 +898,15 @@
         let variant = getUrlParameter("variant");
 
         if (!variant) {
-          // Randomly assign variant (50/50 split)
           variant = Math.random() < 0.5 ? "A" : "B";
         }
 
-        // Store variant in sessionStorage for consistency
         sessionStorage.setItem("ab_variant", variant);
 
-        // Apply variant styling
-        const heroSection = document.getElementById("hero-section");
-        if (variant === "A") {
-          heroSection.classList.add("hero-variant-a");
-        } else {
-          heroSection.classList.add("hero-variant-b");
-        }
-
-        // Log to console for tracking
         console.log("=== CoinCasino A/B Test ===");
         console.log("Variant:", variant);
         console.log("Test Name:", AB_TEST_CONFIG.testName);
         console.log("Tracking Params:", trackingParams);
-
-        // ============================================
-        // KEITARO POSTBACK: Send variant to Keitaro
-        // ============================================
-        // Uncomment and configure when Keitaro is set up:
-        /*
-            if (trackingParams.clickid !== '{clickid}') {
-                fetch('https://your-keitaro-domain.com/track?' + new URLSearchParams({
-                    clickid: trackingParams.clickid,
-                    variant: variant,
-                    test: AB_TEST_CONFIG.testName
-                }));
-            }
-            */
 
         return variant;
       }
@@ -865,12 +920,10 @@
         ctaButtons.forEach((button) => {
           let href = button.getAttribute("href");
 
-          // Replace placeholder tokens with actual values
           href = href.replace("{clickid}", trackingParams.clickid);
           href = href.replace("{offer_id}", trackingParams.offer_id);
           href = href.replace("{subid}", trackingParams.subid);
 
-          // Add variant parameter for A/B testing
           const variant = sessionStorage.getItem("ab_variant") || "A";
           if (href.includes("?")) {
             href += "&variant=" + variant;
@@ -890,28 +943,12 @@
         console.log("Button ID:", buttonId);
         console.log("Variant:", sessionStorage.getItem("ab_variant"));
         console.log("ClickID:", trackingParams.clickid);
-
-        // ============================================
-        // KEITARO CONVERSION TRACKING
-        // ============================================
-        // Uncomment and configure when Keitaro is set up:
-        /*
-            if (trackingParams.clickid !== '{clickid}') {
-                fetch('https://your-keitaro-domain.com/conversion?' + new URLSearchParams({
-                    clickid: trackingParams.clickid,
-                    event: 'click',
-                    button: buttonId,
-                    variant: sessionStorage.getItem('ab_variant')
-                }));
-            }
-            */
       }
 
       // Add click tracking to all CTA buttons
       function initializeClickTracking() {
         const trackedButtons = [
           "header-login-btn",
-          "header-signup-btn",
           "hero-cta-btn",
           "footer-cta-btn",
         ];
@@ -932,39 +969,16 @@
       document.addEventListener("DOMContentLoaded", function () {
         console.log("=== CoinCasino Landing Page Loaded ===");
 
-        // Run A/B test
         if (AB_TEST_CONFIG.enabled) {
           initializeABTest();
         }
 
-        // Update all tracking links
         updateTrackingLinks();
-
-        // Initialize click tracking
         initializeClickTracking();
 
         console.log("✓ All systems ready");
         console.log("==================================");
       });
-
-      // ============================================
-      // KEITARO INTEGRATION NOTES:
-      // ============================================
-      // 1. Replace 'your-keitaro-domain.com' with your actual Keitaro domain
-      // 2. Uncomment the fetch() calls in initializeABTest() and trackConversionClick()
-      // 3. Verify tracking parameters are being passed correctly in the URL
-      // 4. Test both variants (A and B) to ensure proper tracking
-      // 5. Monitor Keitaro dashboard for conversion data
-      //
-      // Variant A: Gold hero background (#1a1a00 tint)
-      // Variant B: Dark gradient hero background (#0a0a0a tint)
-      //
-      // Tracked Conversion Points:
-      // - header-login-btn: Header login button
-      // - header-signup-btn: Header signup button
-      // - hero-cta-btn: Main hero CTA button
-      // - footer-cta-btn: Footer CTA button
-      // ============================================
     </script>
   </body>
 </html>
